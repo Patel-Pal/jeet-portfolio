@@ -1,24 +1,42 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/portfolio/navbar";
+import { BackgroundFX } from "@/components/portfolio/background-fx";
+import { Hero } from "@/components/portfolio/hero";
+import { About } from "@/components/portfolio/about";
+import { Skills } from "@/components/portfolio/skills";
+import { Projects } from "@/components/portfolio/projects";
+import { AnalyticsPlayground } from "@/components/portfolio/analytics-playground";
+import { AnalyticsShowcase } from "@/components/portfolio/analytics-showcase";
+import { EducationTimeline } from "@/components/portfolio/education";
+import { CareerJourney } from "@/components/portfolio/career";
+import { Certifications } from "@/components/portfolio/certifications";
+import { LanguagesAndInterests } from "@/components/portfolio/interests";
+import { Contact } from "@/components/portfolio/contact";
+import { Footer } from "@/components/portfolio/footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
-  component: Index,
+  component: Portfolio,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Portfolio() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="relative min-h-screen bg-background text-foreground">
+      <BackgroundFX />
+      <Navbar />
+      <main className="relative z-10">
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <AnalyticsPlayground />
+        <AnalyticsShowcase />
+        <EducationTimeline />
+        <CareerJourney />
+        <Certifications />
+        <LanguagesAndInterests />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
