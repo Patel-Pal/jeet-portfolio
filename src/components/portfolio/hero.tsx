@@ -118,10 +118,15 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right — dashboard visual */}
-        <motion.div style={{ x: tx, y: ty }} className="relative mx-auto w-full max-w-[520px]">
-          <DashboardVisual />
-        </motion.div>
+        {/* Right — dashboard visual (hidden on mobile) */}
+        <div className="hidden lg:block">
+          <motion.div
+            style={{ x: tx, y: ty }}
+            className="relative mx-auto w-full max-w-[520px]"
+          >
+            <DashboardVisual />
+          </motion.div>
+        </div>
       </div>
     </section>
   );
