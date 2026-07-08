@@ -78,8 +78,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.26 }}
             className="mt-6 max-w-xl text-balance text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
-            Transforming raw data into meaningful business insights through analytics,
-            visualization and storytelling.
+            Transforming raw data into meaningful business insights through analytics, visualization
+            and storytelling.
           </motion.p>
 
           <motion.div
@@ -119,10 +119,7 @@ export function Hero() {
         </div>
 
         {/* Right — dashboard visual */}
-        <motion.div
-          style={{ x: tx, y: ty }}
-          className="relative mx-auto w-full max-w-[520px]"
-        >
+        <motion.div style={{ x: tx, y: ty }} className="relative mx-auto w-full max-w-[520px]">
           <DashboardVisual />
         </motion.div>
       </div>
@@ -143,9 +140,7 @@ function DashboardVisual() {
         transition={{ delay: 0.4, duration: 0.6 }}
         className="absolute left-5 top-5 w-[46%] rounded-2xl border border-border bg-card p-4"
       >
-        <p className="text-[10px] uppercase tracking-widest text-muted-foreground">
-          Revenue
-        </p>
+        <p className="text-[10px] uppercase tracking-widest text-muted-foreground">Revenue</p>
         <p className="mt-1 font-display text-2xl font-semibold">$284.6K</p>
         <p className="mt-1 text-xs text-emerald-400">▲ 12.4% MoM</p>
         <MiniSpark />
@@ -158,9 +153,7 @@ function DashboardVisual() {
         transition={{ delay: 0.55, duration: 0.6 }}
         className="absolute right-5 top-5 w-[42%] rounded-2xl border border-border bg-card p-4"
       >
-        <p className="text-[10px] uppercase tracking-widest text-muted-foreground">
-          Segments
-        </p>
+        <p className="text-[10px] uppercase tracking-widest text-muted-foreground">Segments</p>
         <Donut />
       </motion.div>
 
@@ -187,9 +180,7 @@ function DashboardVisual() {
         transition={{ delay: 0.85, duration: 0.6 }}
         className="absolute bottom-5 left-5 w-[46%] rounded-2xl border border-border bg-card p-4"
       >
-        <p className="text-[10px] uppercase tracking-widest text-muted-foreground">
-          Retention
-        </p>
+        <p className="text-[10px] uppercase tracking-widest text-muted-foreground">Retention</p>
         <Heatmap />
       </motion.div>
 
@@ -200,9 +191,7 @@ function DashboardVisual() {
         transition={{ delay: 1, duration: 0.6 }}
         className="absolute bottom-5 right-5 w-[42%] rounded-2xl border border-border bg-card p-4"
       >
-        <p className="text-[10px] uppercase tracking-widest text-muted-foreground">
-          Conversion
-        </p>
+        <p className="text-[10px] uppercase tracking-widest text-muted-foreground">Conversion</p>
         <p className="mt-1 font-display text-2xl font-semibold">4.82%</p>
         <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-secondary">
           <motion.div

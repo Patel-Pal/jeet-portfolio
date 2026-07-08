@@ -22,7 +22,10 @@ export function EducationTimeline() {
   return (
     <Section id="education" eyebrow="Education" title="Academic timeline.">
       <div className="relative">
-        <div className="absolute left-[15px] top-2 bottom-2 w-px bg-border md:left-1/2" aria-hidden />
+        <div
+          className="absolute left-[15px] top-2 bottom-2 w-px bg-border md:left-1/2"
+          aria-hidden
+        />
         <ul className="space-y-12">
           {ITEMS.map((it, i) => (
             <motion.li
@@ -45,9 +48,7 @@ export function EducationTimeline() {
                   {it.title}
                 </h3>
                 <p className="mt-1 text-sm text-muted-foreground">{it.place}</p>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  {it.body}
-                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{it.body}</p>
               </div>
               <span className="absolute left-0 top-1 grid h-8 w-8 place-items-center rounded-full border border-border bg-background text-accent md:left-1/2 md:-translate-x-1/2">
                 <GraduationCap className="h-4 w-4" />

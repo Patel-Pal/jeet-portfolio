@@ -160,7 +160,10 @@ export function AnalyticsPlayground() {
         {/* Charts row */}
         <div className="grid gap-px bg-border/60 md:grid-cols-3">
           <div className="bg-card p-5">
-            <ChartHead title="Revenue trend" hint={`${region === "All" ? "All regions" : region} · Q${quarter + 1}`} />
+            <ChartHead
+              title="Revenue trend"
+              hint={`${region === "All" ? "All regions" : region} · Q${quarter + 1}`}
+            />
             <div className="h-52">
               <ResponsiveContainer width="100%" height="100%">
                 <AreaChart data={trend} margin={{ top: 10, right: 6, left: -20, bottom: 0 }}>
@@ -171,8 +174,19 @@ export function AnalyticsPlayground() {
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="2 4" stroke="oklch(1 0 0 / 0.06)" />
-                  <XAxis dataKey="month" stroke="oklch(1 0 0 / 0.4)" fontSize={11} tickLine={false} axisLine={false} />
-                  <YAxis stroke="oklch(1 0 0 / 0.4)" fontSize={11} tickLine={false} axisLine={false} />
+                  <XAxis
+                    dataKey="month"
+                    stroke="oklch(1 0 0 / 0.4)"
+                    fontSize={11}
+                    tickLine={false}
+                    axisLine={false}
+                  />
+                  <YAxis
+                    stroke="oklch(1 0 0 / 0.4)"
+                    fontSize={11}
+                    tickLine={false}
+                    axisLine={false}
+                  />
                   <Tooltip
                     contentStyle={{
                       background: "oklch(0.185 0.004 285)",
@@ -182,7 +196,13 @@ export function AnalyticsPlayground() {
                     }}
                     labelStyle={{ color: "oklch(0.7 0.01 285)" }}
                   />
-                  <Area type="monotone" dataKey="value" stroke="oklch(0.65 0.19 260)" fill="url(#g1)" strokeWidth={2} />
+                  <Area
+                    type="monotone"
+                    dataKey="value"
+                    stroke="oklch(0.65 0.19 260)"
+                    fill="url(#g1)"
+                    strokeWidth={2}
+                  />
                 </AreaChart>
               </ResponsiveContainer>
             </div>
@@ -194,8 +214,19 @@ export function AnalyticsPlayground() {
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={regionData} margin={{ top: 10, right: 6, left: -20, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="2 4" stroke="oklch(1 0 0 / 0.06)" />
-                  <XAxis dataKey="region" stroke="oklch(1 0 0 / 0.4)" fontSize={11} tickLine={false} axisLine={false} />
-                  <YAxis stroke="oklch(1 0 0 / 0.4)" fontSize={11} tickLine={false} axisLine={false} />
+                  <XAxis
+                    dataKey="region"
+                    stroke="oklch(1 0 0 / 0.4)"
+                    fontSize={11}
+                    tickLine={false}
+                    axisLine={false}
+                  />
+                  <YAxis
+                    stroke="oklch(1 0 0 / 0.4)"
+                    fontSize={11}
+                    tickLine={false}
+                    axisLine={false}
+                  />
                   <Tooltip
                     cursor={{ fill: "oklch(1 0 0 / 0.04)" }}
                     contentStyle={{

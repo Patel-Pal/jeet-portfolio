@@ -49,10 +49,18 @@ export function BackgroundFX() {
         }}
       />
       {/* Ambient gradient mesh */}
-      <div className="absolute -top-40 left-1/2 h-[560px] w-[900px] -translate-x-1/2 rounded-full opacity-50 blur-3xl"
-           style={{ background: "radial-gradient(closest-side, oklch(0.65 0.19 260 / 0.18), transparent)" }} />
-      <div className="absolute bottom-0 right-0 h-[420px] w-[560px] rounded-full opacity-40 blur-3xl"
-           style={{ background: "radial-gradient(closest-side, oklch(0.72 0.14 200 / 0.15), transparent)" }} />
+      <div
+        className="absolute -top-40 left-1/2 h-[560px] w-[900px] -translate-x-1/2 rounded-full opacity-50 blur-3xl"
+        style={{
+          background: "radial-gradient(closest-side, oklch(0.65 0.19 260 / 0.18), transparent)",
+        }}
+      />
+      <div
+        className="absolute bottom-0 right-0 h-[420px] w-[560px] rounded-full opacity-40 blur-3xl"
+        style={{
+          background: "radial-gradient(closest-side, oklch(0.72 0.14 200 / 0.15), transparent)",
+        }}
+      />
       {/* Noise */}
       <div className="noise-overlay absolute inset-0" />
       {/* Particles */}
@@ -64,14 +72,7 @@ export function BackgroundFX() {
             const dur = 12 + ((i * 7) % 10);
             const r = 0.6 + (i % 3) * 0.4;
             return (
-              <circle
-                key={i}
-                cx={`${x}%`}
-                cy={`${y}%`}
-                r={r}
-                fill="white"
-                opacity="0.25"
-              >
+              <circle key={i} cx={`${x}%`} cy={`${y}%`} r={r} fill="white" opacity="0.25">
                 <animate
                   attributeName="cy"
                   values={`${y}%;${(y + 6) % 100}%;${y}%`}

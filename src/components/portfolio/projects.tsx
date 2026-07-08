@@ -18,8 +18,7 @@ const PROJECTS: Project[] = [
   {
     title: "Sales Performance Dashboard",
     tag: "Case Study · 2025",
-    description:
-      "An executive-ready view of regional sales, top products and rep performance.",
+    description: "An executive-ready view of regional sales, top products and rep performance.",
     tech: ["SQL", "Power BI", "DAX"],
     problem: "Weekly sales reviews took hours of manual Excel prep.",
     solution: "Modeled a star schema in SQL and built a Power BI report with drill-throughs.",
@@ -29,8 +28,7 @@ const PROJECTS: Project[] = [
   {
     title: "Customer Churn Analysis",
     tag: "Case Study · 2025",
-    description:
-      "Explored churn signals in a telecom dataset and shipped an at-risk segment view.",
+    description: "Explored churn signals in a telecom dataset and shipped an at-risk segment view.",
     tech: ["Python", "Pandas", "Matplotlib"],
     problem: "The team lacked a clear picture of which customers were leaving and why.",
     solution: "Cleaned 7K rows, ran EDA and surfaced churn drivers by contract & tenure.",
@@ -40,8 +38,7 @@ const PROJECTS: Project[] = [
   {
     title: "Retail Sales Insights",
     tag: "Excel · 2024",
-    description:
-      "Store-level insights with dynamic filters, KPIs and category deep-dives.",
+    description: "Store-level insights with dynamic filters, KPIs and category deep-dives.",
     tech: ["Excel", "Power Query", "Pivot"],
     problem: "Store managers needed a single view across categories and seasons.",
     solution: "Built a fully dynamic Excel dashboard with slicers and conditional formatting.",
@@ -86,22 +83,26 @@ export function Projects() {
               </span>
             </div>
             <div className="flex flex-1 flex-col p-6">
-              <h3 className="font-display text-xl font-semibold tracking-tight">
-                {p.title}
-              </h3>
+              <h3 className="font-display text-xl font-semibold tracking-tight">{p.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{p.description}</p>
 
               <dl className="mt-5 grid gap-2 text-sm">
                 <div className="grid grid-cols-[80px_1fr] gap-3">
-                  <dt className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Problem</dt>
+                  <dt className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                    Problem
+                  </dt>
                   <dd className="text-foreground/90">{p.problem}</dd>
                 </div>
                 <div className="grid grid-cols-[80px_1fr] gap-3">
-                  <dt className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Solution</dt>
+                  <dt className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                    Solution
+                  </dt>
                   <dd className="text-foreground/90">{p.solution}</dd>
                 </div>
                 <div className="grid grid-cols-[80px_1fr] gap-3">
-                  <dt className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Outcome</dt>
+                  <dt className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                    Outcome
+                  </dt>
                   <dd className="text-accent">{p.outcome}</dd>
                 </div>
               </dl>
@@ -155,12 +156,13 @@ function ProjectCover({ kind }: { kind: Project["cover"] }) {
 function SalesCover() {
   const pts = [12, 22, 18, 30, 26, 40, 34, 48, 44, 58];
   const d =
-    "M " +
-    pts
-      .map((v, i) => `${(i / (pts.length - 1)) * 100} ${100 - v * 1.4}`)
-      .join(" L ");
+    "M " + pts.map((v, i) => `${(i / (pts.length - 1)) * 100} ${100 - v * 1.4}`).join(" L ");
   return (
-    <svg viewBox="0 0 100 100" className="absolute inset-0 h-full w-full" preserveAspectRatio="none">
+    <svg
+      viewBox="0 0 100 100"
+      className="absolute inset-0 h-full w-full"
+      preserveAspectRatio="none"
+    >
       <defs>
         <linearGradient id="sf" x1="0" x2="0" y1="0" y2="1">
           <stop offset="0%" stopColor="oklch(0.65 0.19 260)" stopOpacity="0.4" />

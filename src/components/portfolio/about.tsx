@@ -15,26 +15,26 @@ export function About() {
           className="space-y-5 text-base leading-[1.75] text-muted-foreground sm:text-[17px]"
         >
           <p className="text-foreground/90">
-            I&apos;m Jeet — a data analyst who enjoys sitting with a messy dataset until the
-            story inside it becomes obvious.
+            I&apos;m Jeet — a data analyst who enjoys sitting with a messy dataset until the story
+            inside it becomes obvious.
           </p>
           <p>
-            I hold a Bachelor of Computer Applications from Veer Narmad South Gujarat
-            University and I&apos;m currently pursuing my Master of Computer Applications at
-            Indus University. Along the way I&apos;ve fallen for the craft of turning
-            business questions into queries, dashboards and decisions.
+            I hold a Bachelor of Computer Applications from Veer Narmad South Gujarat University and
+            I&apos;m currently pursuing my Master of Computer Applications at Indus University.
+            Along the way I&apos;ve fallen for the craft of turning business questions into queries,
+            dashboards and decisions.
           </p>
           <p>
             My daily tools are <span className="text-foreground">SQL</span>,{" "}
             <span className="text-foreground">Python</span> (Pandas &amp; NumPy),{" "}
             <span className="text-foreground">Excel</span>,{" "}
             <span className="text-foreground">Power BI</span> and{" "}
-            <span className="text-foreground">Tableau</span>. I keep sharpening them
-            through personal projects, case studies and a steady diet of new datasets.
+            <span className="text-foreground">Tableau</span>. I keep sharpening them through
+            personal projects, case studies and a steady diet of new datasets.
           </p>
           <p>
-            I care about clarity. A dashboard is only useful when a stakeholder can look
-            at it once and know what to do next.
+            I care about clarity. A dashboard is only useful when a stakeholder can look at it once
+            and know what to do next.
           </p>
         </motion.div>
 
@@ -90,9 +90,7 @@ function TimelineItem({
       <span className="absolute left-0 top-0 grid h-7 w-7 place-items-center rounded-full border border-border bg-background text-foreground/80">
         {icon}
       </span>
-      {!last && (
-        <span className="absolute left-[13px] top-8 h-full w-px bg-border" aria-hidden />
-      )}
+      {!last && <span className="absolute left-[13px] top-8 h-full w-px bg-border" aria-hidden />}
       <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
         {label}
       </p>

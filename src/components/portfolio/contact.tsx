@@ -1,15 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import {
-  ArrowUpRight,
-  Github,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-} from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 import { Section } from "./section";
 
 export function Contact() {
@@ -25,16 +17,42 @@ export function Contact() {
       <div className="grid gap-8 lg:grid-cols-[1fr_1.1fr]">
         <div className="space-y-6">
           <p className="max-w-md text-base leading-relaxed text-muted-foreground">
-            The quickest way to reach me is email — I usually reply within a day. For
-            more casual conversations, LinkedIn works too.
+            The quickest way to reach me is email — I usually reply within a day. For more casual
+            conversations, LinkedIn works too.
           </p>
 
           <ul className="space-y-3">
-            <ContactRow icon={<Mail className="h-4 w-4" />} label="Email" value="jeet.rathod@example.com" href="mailto:jeet.rathod@example.com" />
-            <ContactRow icon={<Phone className="h-4 w-4" />} label="Phone" value="+91 00000 00000" href="tel:+910000000000" />
-            <ContactRow icon={<MapPin className="h-4 w-4" />} label="Location" value="Gujarat, India" />
-            <ContactRow icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" value="linkedin.com/in/jeet-rathod" href="#" external />
-            <ContactRow icon={<Github className="h-4 w-4" />} label="GitHub" value="github.com/jeet-rathod" href="#" external />
+            <ContactRow
+              icon={<Mail className="h-4 w-4" />}
+              label="Email"
+              value="jeet.rathod@example.com"
+              href="mailto:jeet.rathod@example.com"
+            />
+            <ContactRow
+              icon={<Phone className="h-4 w-4" />}
+              label="Phone"
+              value="+91 00000 00000"
+              href="tel:+910000000000"
+            />
+            <ContactRow
+              icon={<MapPin className="h-4 w-4" />}
+              label="Location"
+              value="Gujarat, India"
+            />
+            <ContactRow
+              icon={<Linkedin className="h-4 w-4" />}
+              label="LinkedIn"
+              value="linkedin.com/in/jeet-rathod"
+              href="#"
+              external
+            />
+            <ContactRow
+              icon={<Github className="h-4 w-4" />}
+              label="GitHub"
+              value="github.com/jeet-rathod"
+              href="#"
+              external
+            />
           </ul>
         </div>
 

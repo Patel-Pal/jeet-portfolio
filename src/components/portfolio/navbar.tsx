@@ -34,11 +34,7 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <a
-          href="#home"
-          className="group flex items-center gap-2"
-          aria-label="Jeet Rathod, home"
-        >
+        <a href="#home" className="group flex items-center gap-2" aria-label="Jeet Rathod, home">
           <span className="grid h-9 w-9 place-items-center rounded-xl border border-border bg-card font-display text-sm font-semibold tracking-tight">
             JR
           </span>

@@ -51,9 +51,7 @@ export function CareerJourney() {
                 </span>
               </div>
               <h3 className="mt-4 font-display text-lg font-medium">{s.title}</h3>
-              <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                {s.body}
-              </p>
+              <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
             </motion.div>
           ))}
         </div>

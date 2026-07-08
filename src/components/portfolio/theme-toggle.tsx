@@ -7,9 +7,7 @@ export function ThemeToggle() {
 
   useEffect(() => {
     const stored = (typeof window !== "undefined" && localStorage.getItem("jr-theme")) as
-      | "dark"
-      | "light"
-      | null;
+      "dark" | "light" | null;
     if (stored) setTheme(stored);
     else setTheme(document.documentElement.classList.contains("light") ? "light" : "dark");
   }, []);
@@ -22,7 +20,9 @@ export function ThemeToggle() {
     el.classList.toggle("dark", next === "dark");
     try {
       localStorage.setItem("jr-theme", next);
-    } catch {}
+    } catch {
+      // localStorage may be unavailable in private browsing
+    }
   };
 
   return (
